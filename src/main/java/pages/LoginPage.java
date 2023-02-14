@@ -18,7 +18,7 @@ public class LoginPage
 	By loginbutton = By.xpath("/html/body/div[3]/div[1]/div[2]/div/form/fieldset/div[2]/div[4]/div[2]/input");
 	By profile = By.className("user-icon");
 	By logoutbutton = By.xpath("/html/body/div[1]/div/div[2]/div/p[1]/a[2]");
-	//By logoutbutton = By.linkText("Log out");
+	
 	
 	public void enterUserName(String strUserName)
 	{
@@ -49,7 +49,7 @@ public class LoginPage
 			this.enterUserName(strUserName);
 			this.enterPassword(strPassword);
 			this.clickLoginButton();
-			this.clickLogout();
+			//this.clickLogout();
 			
 	    }
 		catch(Exception e)

@@ -32,12 +32,8 @@ public class Login extends Base
 	{						
 		 LoginPage page = new LoginPage(driver);
 		page.login(xcl.getCellData("Login","User Name"), xcl.getCellData("Login","Password"));					  				
+		page.clickLogout();
 	}
-	@Test(priority=2)
-	public void logoutoperation()
-	{
-      LoginPage page = new LoginPage(driver);
-	  page.clickLogout();
-		
-	}
+	
+	
 }

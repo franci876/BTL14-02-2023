@@ -17,9 +17,8 @@ WebDriver driver;
 		
 		
 	}
-	By products = By.xpath("/html/body/div[2]/ul/li[2]/ul/li[7]/a");
-	//By coredata =By.xpath("/html/body/div[2]/ul/li[2]/a");
-	//By product = By.xpath("/html/body/div[2]/ul/li[2]/ul/li[7]");
+	By coredata =By.xpath("/html/body/div[2]/ul/li[2]/a");
+	By products = By.xpath("/html/body/div[2]/ul/li[2]/ul/li[7]/a");	
 	By addnewproduct = By.xpath("/html/body/div[3]/div[1]/a");
 	By prodname = By.id("prod_name");
 	By businesstype = By.xpath("/html/body/div[3]/div[1]/form/div[2]/div/fieldset/div[3]/div[2]/div/a/span");
@@ -36,7 +35,7 @@ WebDriver driver;
 	public void clickcoredata()
 	{
 		
-		//driver.findElement(coredata).click();	
+		driver.findElement(coredata).click();	
 		driver.findElement(products).click();
 		driver.findElement(addnewproduct).click();
 	}
@@ -61,5 +60,4 @@ WebDriver driver;
 		this.createproduct();
 		this.deleteproduct();
 	}
-
 }

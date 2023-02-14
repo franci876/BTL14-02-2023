@@ -8,6 +8,7 @@
           <include name="beforetest"/>
           <include name="aftertest"/>
           <include name="logoutoperation"/>
+          <include name="loginoperation"/>
         </methods>
       </class> <!-- testCases.Login -->
     </classes>
